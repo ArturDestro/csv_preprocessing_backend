@@ -46,16 +46,16 @@ Local Storage (jobs/{job_id}/)
 ```text
 backend/
 ├── engine
-│ └── Cleaner/ # clening NaN values pipeline
-│ ├── Loader/ # csv loading pipelien
-│ ├── Scaler/ # scaling numerical columns pipeline
-│ └── Encoder/ # encoding categorical columns pipeline
-│ └── pipeline.py # what is used by worker.py
-├── main.py # FastAPI application
-├── worker.py # RQ worker (CSV processing)
-├── job_utils.py # Job and filesystem helpers
+│ └── Cleaner/              # clening NaN values pipeline
+│ ├── Loader/               # csv loading pipelien
+│ ├── Scaler/               # scaling numerical columns pipeline
+│ └── Encoder/              # encoding categorical columns pipeline
+│ └── pipeline.py           # what is used by worker.py
+├── main.py                 # FastAPI application
+├── worker.py               # RQ worker (CSV processing)
+├── job_utils.py            # Job and filesystem helpers
 ├── jobs/
-│ └── <job_id>/ #each job has it own directory to work with
+│ └── <job_id>/             #each job has it own directory to work with
 │ ├── input.csv
 │ ├── output.csv
 │ └── error.txt
