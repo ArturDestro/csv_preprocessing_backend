@@ -52,7 +52,7 @@ backend/
 │ └── <job_id>/
 │ ├── input.csv
 │ ├── output.csv
-│ └── status.json
+│ └── error.txt
 ├── requirements.txt
 └── README.md
 ```
