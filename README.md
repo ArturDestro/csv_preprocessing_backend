@@ -139,7 +139,7 @@ queued
 
 processing
 
-done
+finished
 
 error
 ```
